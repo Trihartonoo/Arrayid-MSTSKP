@@ -14,6 +14,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <!---->
+
+    <!-- Aos Liblary -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--  -->
   </head>
 
   
@@ -67,27 +71,35 @@
         <h2 class="my-2 md:my-6 text-xl md:text-5xl leading-10">Social Media Tool Yang Tidak Akan Memberikan Kamu Insight Apapun</h2>
         <p class="text-xs leading-5 w-2/3 mx-auto">Adalah benar apa yang kamu baca barusan. Tool yang mainstream akan memberikan kamu pelbagai insight, karena kami anti-mainstream maka kami akan melakukan sebaliknya.</p>
 
-        <img src="src/image/youtube.png" alt="" class="absolute top-0 left-5 w-10 h-10" />
+        <img data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1000" src="src/image/youtube.png" alt="" class="absolute top-0 left-5 w-10 h-10" />
         <img src="src/image/elips-2.png" alt="" class="absolute bottom-1/2 left-0 w-10 h-10 animate-bounce" />
 
-        <img src="src/image/facebook.png" alt="" class="absolute bottom-1/2 right-0 w-10 h-10" />
+        <img data-aos="flip-right"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1000" src="src/image/facebook.png" alt="" class="absolute bottom-1/2 right-0 w-10 h-10" />
 
         <img src="src/image/Ellipse-1.png" alt="" class="absolute top-0 right-5 w-10 h-10 animate-bounce" />
-        <img src="src/image/tiktok.png" alt="" class="absolute right-10 bottom-0 w-10 h-10" />
-        <img src="src/image/instagram.png" alt="" class="absolute bottom-0 left-10 w-10 h-10" />
+        <img data-aos="flip-right"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1000" src="src/image/tiktok.png" alt="" class="absolute right-10 bottom-0 w-10 h-10" />
+        <img data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1000"  src="src/image/instagram.png" alt="" class="absolute bottom-0 left-10 w-10 h-10" />
       </div>
       <div class="relative flex items-center justify-center w-full text-white">
         <button class="bg-orange-500 py-2 px-5 rounded-full">Mulai Sekarang</button>
         <button class="mx-2">Pelajari dulu</button>
       </div>
       <div class="w-4/5 relative mx-auto pt-20">
-        <img src="src/image/dashboard.png" alt="" srcset="" />
+        <img data-aos="fade-up" data-aos-duration="2000" src="src/image/dashboard.png" alt="" srcset="" />
       </div>
     </div>
 
     <!-- insight -->
-    <div class="w-full h-auto lg:flex justify-between px-4 lg:px-20 relative mt-20 md:mt-0">
-      <div class="w-full lg:w-2/5">
+    <div class="w-full h-auto lg:flex justify-between px-4 lg:px-20 relative mt-20 md:mt-0 overflow-hidden">
+      <div data-aos="fade-right" data-aos-duration="2000" class="w-full lg:w-2/5">
         <div class="flex items-center">
           <div class="w-12 rounded-lg h-1 bg-orange-600"></div>
           <h1 class="font-semibold my-1 mx-2 text-orange-600">Kenapa Sih</h1>
@@ -96,7 +108,7 @@
         <p class="my-4">Di sini kita akan klarifikasi mengapa kita tidak memberikan insight apapun di tool ini kepada kamu. Pada dasarnya hal ini kami lakukan semata-mata ingin menyelamatkan planet bumi.</p>
         <button class="bg-slate-900 px-4 py-2 rounded-xl my-4 md:my-6 text-white">Pelajari lebih lanjut</button>
       </div>
-      <div class="w-full lg:w-1/2 lg:flex">
+      <div data-aos="fade-left" data-aos-duration="2000" class="w-full lg:w-1/2 lg:flex">
         <div class="md:flex lg:block">
           <div class="rounded-lg p-4 hover:shadow-2xl transition-colors ease-in-out hover:bg-slate-900 hover:delay-200 group">
             <div class="flex items-center">
@@ -171,33 +183,33 @@
 
     <!-- So, what's next -->
     <div class="w-full h-full px-4 my-14 lg:px-20">
-      <div class="md:text-center lg:w-1/2 mx-auto">
+      <div data-aos="fade-up" data-aos-duration="2000" class="md:text-center lg:w-1/2 mx-auto">
         <h1 class="text-sm text-orange-600 my-2 md:my-4 font-semibold text-center">Terus Gimana ?</h1>
         <h2 class="text-base font-bold my-2 md:text-4xl md:my-4">Terus Ngapain Dong Kalo Nggak Ada Insight Apapun?</h2>
         <p class="my-2 md:my-4">Ya nggak tau, salah sendiri lu ngapain ke website ini. Tapi ada tiga kemungkinan kenapa lo bisa ada di website ini. Ketiga kemungkinan itu akan gwej jabarkan di bawah ini dengan ilustrasinya hehehe.</p>
       </div>
 
       <!-- card -->
-      <div class="my-10 md:flex mx-2 md:mx-0">
-        <div class="my-4">
-          <div class="w-full h-48 border-collapse items-center flex justify-center py-4 shadow-2xl rounded-xl">
+      <div class="my-10 grid md:grid-cols-3 gap-8 overflow-hidden">
+        <div data-aos="fade-right" data-aos-duration="2000" class="">
+          <div class="w-full h-48 items-center flex justify-center py-4 shadow-2xl rounded-xl">
             <img class="w-16 h-16" src="src/image/love.png" alt="" srcset="" />
           </div>
-          <h1 class="font-bold my-4">Kamu Tidak Punya Kekasih</h1>
+          <h1 class="font-bold mt-6 mb-4">Kamu Tidak Punya Kekasih</h1>
           <p>Sudah pasti orang yang tidak punya kekasih akan memiliki waktu luang yang banyak, jadi ya lo iseng aja gitu datang ke website ini.</p>
         </div>
-        <div class="my-4 md:mx-8">
-          <div class="w-full h-48 border-collapse items-center flex justify-center py-4 shadow-2xl rounded-xl">
+        <div data-aos="fade-down" data-aos-duration="2000" class="">
+          <div class="w-full h-48 items-center flex justify-center py-4 shadow-2xl rounded-xl">
             <img class="w-16 h-16" src="src/image/emot.png" alt="" srcset="" />
           </div>
-          <h1 class="font-bold my-4">Lo Wibu Autid</h1>
+          <h1 class="font-bold mt-6 mb-4">Lo Wibu Autid</h1>
           <p>Iyh bener, biasanya wibu kalo nggak halu waifu suka iseng nggak jelas, termasuk mengunjungi website ini tanpa alasan yang jelas hehehe.</p>
         </div>
-        <div class="my-4">
-          <div class="w-full h-48 border-collapse items-center flex justify-center py-4 shadow-2xl rounded-xl">
+        <div data-aos="fade-left" data-aos-duration="2000" class="">
+          <div class="w-full h-48 items-center flex justify-center py-4 shadow-2xl rounded-xl">
             <img class="w-16 h-16" src="src/image/chiken.png" alt="" srcset="" />
           </div>
-          <h1 class="font-bold my-4">Kok Gambar Ayam?</h1>
+          <h1 class="font-bold mt-6 mb-4">Kok Gambar Ayam?</h1>
           <p>Lah ngatur. Nggak tau lagi gwej alasan yang ketiga, biar bagus aja desainnya. Kalo cuman dua jadinya nggak bagus hehe.</p>
         </div>
       </div>
@@ -223,7 +235,7 @@
 
       <div class="mx-4 md:mx-20 md:p-20 relative my-6 py-10 rounded-lg md:flex bg-white" style="box-shadow: 0px 40px 60px rgba(13, 14, 37, 0.1)">
         <div class="md:w-1/2 mx-4">
-          <img class="w-full" src="src/image/buffer.png" alt="" srcset="" />
+          <img data-aos="fade-up" data-aos-duration="2000" class="w-full" src="src/image/buffer.png" alt="" srcset="" />
           <p class="my-4 md:text-xl">Buffer.com – Buffer is the most intuitive, affordable, and authentic way to reach more people on social media.</p>
           <div class="flex items-center">
             <h1 class="font-semibold text-base">Learn More</h1>
@@ -233,7 +245,7 @@
           </div>
         </div>
         <div class="md:w-1/2 mx-4 mt-4 md:mt-0">
-          <img class="w-full" src="src/image/sendible.png" alt="" srcset="" />
+          <img data-aos="fade-up" data-aos-duration="3000"  class="w-full" src="src/image/sendible.png" alt="" srcset="" />
           <p class="my-4 md:text-xl">Sendible.com – Grow your audience, attract new customers, and reach your social media goals with an all-in-one platform.</p>
           <div class="flex items-center">
             <h1 class="font-semibold text-base">Learn More</h1>
@@ -284,5 +296,9 @@
       <h1 class="leading-5 text-sm">COPY RIGHT © 2022 — DESIGN NAUVAL</h1>
     </div>
   </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   </body>
 </html>

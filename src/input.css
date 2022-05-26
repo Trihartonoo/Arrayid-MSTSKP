@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.Menu-list-active {
+  @apply block transition duration-500 translate-x-0;
+}
+.Navbar-scroll {
+  @apply bg-slate-900;
+}

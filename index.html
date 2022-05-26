@@ -22,9 +22,9 @@
 
   
   <body class="font-sora">
-    <nav class="z-10 absolute h-20 w-full bg-transparent flex items-center justify-between px-4 lg:px-20">
-      <div class="flex items-center">
-        <div class="w-10 h-10 bg-slate-500 flex items-center justify-center rounded-full">
+    <nav class="z-10 fixed py-6 w-full bg-transparent px-4 lg:px-20 flex items-center justify-between Navbar">
+      <div class="flex items-center justify-center">
+        <div class="w-10 h-10 bg-slate-700 flex items-center justify-center rounded-full">
           <svg class="w-5 h-5" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M0.76 9.106L4.792 5.038L0.76 0.987999H3.658L7.69 5.038L3.658 9.106H0.76ZM9.97445 11.626C9.55445 11.626 9.20645 11.494 8.93045 11.23C8.66645 10.966 8.53445 10.648 8.53445 10.276C8.53445 9.892 8.66645 9.568 8.93045 9.304C9.20645 9.04 9.55445 8.908 9.97445 8.908C10.3945 8.908 10.7365 9.04 11.0005 9.304C11.2765 9.568 11.4145 9.892 11.4145 10.276C11.4145 10.648 11.2765 10.966 11.0005 11.23C10.7365 11.494 10.3945 11.626 9.97445 11.626ZM16.2684 9.106L12.2544 5.038L16.2684 0.987999H19.1844L15.1344 5.038L19.1844 9.106H16.2684Z"
@@ -44,23 +44,23 @@
         <h1 class="text-white font-reguler mx-2">Mendaftar</h1>
         <button class="bg-white font-bold text-slate-900 px-2 py-1 rounded-full">Login</button>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 font-semibold text-white md:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 font-semibold text-white md:hidden Menu-btn" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
       </svg>
     </nav>
-
-    <!-- mobile -->
-    <div class="absolute top-0 right-0 w-1/2 bg-slate-600 h-screen hidden">
-      <svg xmlns="http://www.w3.org/2000/svg" class="absolute right-10 top-7 text-white font-bold h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <!-- mobile -->
+    <div class="fixed z-50 top-0 right-0 w-1/2 h-full bg-slate-900 text-white translate-x-full Menu-list transition duration-500">
+      <svg xmlns="http://www.w3.org/2000/svg" class="absolute right-3 top-7 text-white font-bold h-8 w-8 Close-menu" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
       </svg>
-      <div class="flex flex-col items-center justify-center h-full bg-slate-600 md:hidden text-white">
+      <div class="flex flex-col items-center justify-center h-full">
         <a href="" class="my-8">Top</a>
         <a href="" class="my-8">Features</a>
         <a href="" class="my-8">Reasons</a>
         <a href="" class="my-8">Alternatives</a>
       </div>
     </div>
+  
 
     <!-- navy-yellow -->
     <div class="w-full h-auto pt-20">
@@ -296,6 +296,7 @@
       <h1 class="leading-5 text-sm">2022 — DESIGN NAUVAL @ArrayId</h1>
     </div>
   </footer>
+  <script src="src/script.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();

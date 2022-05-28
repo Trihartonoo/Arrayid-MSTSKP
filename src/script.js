@@ -11,7 +11,7 @@ MenuClose.addEventListener('click', () => {
 });
 
 document.addEventListener('scroll', () => {
-  if (window.scrollY > 50) {
+  if (window.scrollY > 200) {
     Navbar.classList.add('Navbar-scroll');
   } else {
     Navbar.classList.remove('Navbar-scroll');
